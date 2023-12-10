@@ -5,7 +5,6 @@ def count_common_elements(*lists):
         for element in list:
             element_count[element] = element_count.get(element, 0) + 1
     common_elements = {elem: count for elem, count in element_count.items() if count == len(lists)}
-
     return common_elements
 
 
